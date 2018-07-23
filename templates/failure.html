@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+
+{% block title %}
+  Failure
+{% endblock %}
+
+{% block content %}
+  <p>Invalid email and password combination</p>
+  <a href="{{ url_for('login') }}">Please try again</a>
+{% endblock %}
