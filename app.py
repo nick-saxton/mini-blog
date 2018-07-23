@@ -54,8 +54,8 @@ def register():
 
         new_user = User(username=username, email=email, password=sha256_crypt.encrypt(request.form.get('password')))
 
-        session.add(new_user)
-        session.commit()
+        db.session.add(new_user)
+        db.session.commit()
 
         if len(errors) == 0:
             return redirect(url_for('index'))
