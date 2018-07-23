@@ -14,10 +14,18 @@
   </ul>
 
   <form action="{{ url_for('register') }}" method="post">
-    <input type="text" name="username" placeholder="Username"><br>
-    <input type="email" name="email" placeholder="Email"><br>
-    <input type="password" name="password" placeholder="Password"><br>
-    <input type="password" name="confirm" placeholder="Confirm Password"><br>
-    <button>Submit</button>
+    <div class="form-group">
+      <input class="form-control" type="text" name="username" placeholder="Username">
+    </div>
+    <div class="form-group">
+      <input class="form-control" type="email" name="email" placeholder="Email">
+    </div>
+    <div class="form-group">
+      <input class="form-control" type="password" name="password" placeholder="Password">
+    </div>
+    <div class="form-group">
+      <input class="form-control" type="password" name="confirm" placeholder="Confirm Password">
+    </div>
+    <button class="btn btn-primary">Submit</button>
   </form>
 {% endblock %}
